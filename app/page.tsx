@@ -1,8 +1,4 @@
-import Image from "next/image"
-import Link from "next/link"
-
-import { buttonVariants } from "@/components/ui/button"
-import { cn } from "@/lib/utils"
+import { Hero } from "@/components/hero"
 
 export default function HomePage() {
   return (
@@ -12,7 +8,7 @@ export default function HomePage() {
         className="pointer-events-none absolute inset-x-0 -top-40 h-[32rem] bg-[radial-gradient(60%_60%_at_50%_0%,rgba(91,91,246,0.35),transparent_70%)]"
       />
 
-      
+      <Hero />
     </main>
   )
 }
