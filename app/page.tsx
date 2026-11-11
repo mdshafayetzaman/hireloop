@@ -1,23 +1,18 @@
-import { SiteHeader } from "@/components/site-header"
-import { Button } from "@/components/ui/button"
+import Image from "next/image"
+import Link from "next/link"
 
-export default function Page() {
+import { buttonVariants } from "@/components/ui/button"
+import { cn } from "@/lib/utils"
+
+export default function HomePage() {
   return (
-    <>
-      <SiteHeader />
-      <div className="flex min-h-[calc(100svh-4rem)] p-6">
-      <div className="flex max-w-md min-w-0 flex-col gap-4 text-sm leading-loose">
-        <div>
-          <h1 className="font-medium">Project ready!</h1>
-          <p>You may now add components and start building.</p>
-          <p>We&apos;ve already added the button component for you.</p>
-          <Button className="mt-2">Button</Button>
-        </div>
-        <div className="font-mono text-xs text-muted-foreground">
-          (Press <kbd>d</kbd> to toggle dark mode)
-        </div>
-      </div>
-    </div>
-    </>
+    <main className="relative overflow-hidden">
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-x-0 -top-40 h-[32rem] bg-[radial-gradient(60%_60%_at_50%_0%,rgba(91,91,246,0.35),transparent_70%)]"
+      />
+
+      
+    </main>
   )
 }
